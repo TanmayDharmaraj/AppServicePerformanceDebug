@@ -12,7 +12,7 @@ namespace ASEPerfIssue.Controllers
 	{
 		internal IAuthenticationProvider authProvider;
 		private ILogger _logger;
-		public HomeController(IAuthenticationProvider authentication, ILogger logger)
+		public HomeController(IAuthenticationProvider authentication, ILogger<HomeController> logger)
 		{
 			authProvider = authentication;
 			_logger = logger;
